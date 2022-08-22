@@ -1,0 +1,144 @@
+{
+  "projects": [
+    {
+      "name": "Milho",
+      "budget": "25000",
+      "unity": {
+        "id": "1",
+        "name": "KG"
+      },
+      "quan": 35000,
+      "category": {
+        "id": "1",
+        "name": "Ração"
+      },
+      "cost": 5000,
+      "services": [
+        {
+          "name": "Granja i",
+          "cost": "5000",
+          "quan": "2000",
+          "description": "abastecimento cilos",
+          "id": "42bf8aea-3a6e-47db-be63-e893ad465753"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Sorgo",
+      "budget": "50000",
+      "unity": {
+        "id": "1",
+        "name": "KG"
+      },
+      "quan": "80000",
+      "category": {
+        "id": "1",
+        "name": "Ração"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Farelo",
+      "budget": "15000",
+      "unity": {
+        "id": "1",
+        "name": "KG"
+      },
+      "quan": "60000",
+      "category": {
+        "id": "1",
+        "name": "Ração"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Rodimete",
+      "budget": "35000",
+      "unity": {
+        "id": "2",
+        "name": "UN"
+      },
+      "quan": "58000",
+      "category": {
+        "id": "2",
+        "name": "Medicamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Lisina",
+      "budget": "8000",
+      "unity": {
+        "id": "6",
+        "name": "L"
+      },
+      "quan": "100",
+      "category": {
+        "id": "2",
+        "name": "Medicamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Calcário",
+      "budget": "30000",
+      "unity": {
+        "id": "1",
+        "name": "KG"
+      },
+      "quan": 80000,
+      "category": {
+        "id": "1",
+        "name": "Ração"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Ração"
+    },
+    {
+      "id": 2,
+      "name": "Medicamento"
+    }
+  ],
+  "unity": [
+    {
+      "id": 1,
+      "name": "KG"
+    },
+    {
+      "id": 2,
+      "name": "UN"
+    },
+    {
+      "id": 3,
+      "name": "M"
+    },
+    {
+      "id": 4,
+      "name": "CM"
+    },
+    {
+      "id": 5,
+      "name": "PC"
+    },
+    {
+      "id": 6,
+      "name": "L"
+    }
+  ]
+}
