@@ -1,12 +1,16 @@
 import styled from 'styled-components'
+import fundo from '../../../img/estoque.webp'
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 10px;
+height: 80vh;
+background-image: url(${fundo});
+background-repeat: no-repeat;
+background-size 100% 100%;
 `
 export const Content = styled.div`
   gap: 15px;

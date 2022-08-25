@@ -4,7 +4,6 @@ import Button from '../../Button'
 import * as C from './styles'
 import { Link, useNavigate } from 'react-router-dom'
 import useAuth from '../../../hooks/useAuth'
-import estoque from '../../../img/estoque.webp'
 
 const Signin = () => {
   const { signin } = useAuth()
