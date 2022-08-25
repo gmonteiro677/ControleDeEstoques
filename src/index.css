@@ -5,7 +5,9 @@
   font-size: 'Open Sans', sans-serif;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   /* background: linear-gradient( #bdbdbd,#1e88e5); */
   height: 100%;
   background-color: #b0bec5;

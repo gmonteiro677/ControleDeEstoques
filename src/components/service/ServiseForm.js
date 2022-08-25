@@ -28,7 +28,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
   console.log(service.quan)
 
   return (
-    <>
+    <div className={styles.div}>
       {message && <Message type={type} msg={message} />}
       <form onSubmit={submit} className={styles.form}>
         <Input
@@ -61,7 +61,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
         />
         <SubmitButton text={btnText} />
       </form>
-    </>
+    </div>
   )
 }
 

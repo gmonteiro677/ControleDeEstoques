@@ -21,6 +21,8 @@ function Project() {
   const [message, setMessage] = useState()
   const [type, setType] = useState()
 
+  console.log(project)
+
   useEffect(() => {
     setTimeout(() => {
       fetch(`http://127.0.0.1:5000/projects/${id}`, {
@@ -183,7 +185,7 @@ function Project() {
                 </div>
               )}
             </div>
-            <div className={styles.details_container}>
+            <div className={styles.service_from_container}>
               <h2>Adicione uma saida:</h2>
               <button className={styles.btn} onClick={toggleServiceForm}>
                 {!showServiceForm ? 'Adicionar uma saida' : 'Fechar'}

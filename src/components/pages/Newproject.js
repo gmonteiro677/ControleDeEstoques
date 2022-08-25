@@ -1,15 +1,14 @@
 import styles from './Newproject.module.css'
-import ProjectForm from '../project/ProjectForm.js'
-import { useHistory } from 'react-router-dom'
+import ProjectForm from '../project/ProjectForm'
+import { useNavigate } from 'react-router-dom'
 
 function Newproject() {
-  const history = useHistory()
+  const history = useNavigate()
 
   function createPost(project) {
     // initialize cost and services
     project.cost = 0
     project.services = []
-    console.log(project)
 
     fetch('http://127.0.0.1:5000/projects', {
       method: 'POST',
@@ -22,7 +21,9 @@ function Newproject() {
       .then(data => {
         // console.log(data)
         //redirect
-        history.push('/projects', { message: 'Estoque criado com sucesso!' })
+        history('/projects', {
+          state: { message: 'Estoque Criado com Sucesso' }
+        })
       })
       .catch(err => console.log(err))
   }

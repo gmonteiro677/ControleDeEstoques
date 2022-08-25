@@ -15,7 +15,9 @@ function Projects() {
 
   const location = useLocation()
   let message = ''
+
   if (location.state) {
+    console.log(location.state)
     message = location.state.message
   }
 
@@ -55,7 +57,9 @@ function Projects() {
   return (
     <div className={styles.project_container}>
       <div className={styles.title_container}>
-        <h1>Meus Estoques</h1>
+        <h1 onClick={() => console.log(location.state.message)}>
+          Meus Estoques
+        </h1>
         <LinkButton to="/newproject" text="Criar Estoque" />
       </div>
       {message && <Message type="success" msg={message} />}
