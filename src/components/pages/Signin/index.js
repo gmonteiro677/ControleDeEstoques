@@ -4,6 +4,7 @@ import Button from '../../Button'
 import * as C from './styles'
 import { Link, useNavigate } from 'react-router-dom'
 import useAuth from '../../../hooks/useAuth'
+import Footer from '../../layout/Footer'
 
 const Signin = () => {
   const { signin } = useAuth()
@@ -54,6 +55,9 @@ const Signin = () => {
           </C.Strong>
         </C.LabelSignup>
       </C.Content>
+      <C.Footer>
+        <Footer />
+      </C.Footer>
     </C.Container>
   )
 }

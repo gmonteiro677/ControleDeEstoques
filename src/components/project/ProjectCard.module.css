@@ -4,13 +4,13 @@
   border-radius: 5px;
   width: 24%;
   margin: 0.5%;
-  background-color: #f1f8e9 ;
+  background-color: #f1f8e9;
 }
 
 .project_card h4 {
   background-color: #0d47a1;
-  color: #f1f8e9 ;
-  padding: .4em;
+  color: #f1f8e9;
+  padding: 0.4em;
   margin-bottom: 1.3em;
   font-size: 1.3em;
   text-align: center;
@@ -38,12 +38,12 @@
   margin-right: 5px;
 }
 
-.category_text .Alimento{
-background-color: #009688;
+.category_text .Ração {
+  background-color: #009688;
 }
 
 .category_text .Medicamento {
-background-color: #e65100 ;
+  background-color: #e65100;
 }
 
 .project_card_actions {
@@ -56,10 +56,10 @@ background-color: #e65100 ;
 .project_card_actions button {
   text-decoration: none;
   border: none;
-  background-color: #f1f8e9  ;
+  background-color: #f1f8e9;
   color: #424242;
   font-size: 0.9em;
-  padding: .6em 1em;
+  padding: 0.6em 1em;
   margin-right: 1em;
   cursor: pointer;
   border: 1px solid #424242;
@@ -70,11 +70,11 @@ background-color: #e65100 ;
 }
 
 .project_card_actions svg {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .project_card_actions a:hover,
-.project_card_actions button:hover{
+.project_card_actions button:hover {
   background-color: #424242;
-  color: #f1f8e9    ;
+  color: #f1f8e9;
 }

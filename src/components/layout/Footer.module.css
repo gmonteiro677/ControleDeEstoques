@@ -1,11 +1,7 @@
 .footer {
-  background-color: #1e88e5;
-  color: #f1f8e9;
-  padding: 4em;
+  /* background-color: #1e88e5; */
+  /* color: #f1f8e9; */
   text-align: center;
-  width: 100%;
-  bottom: 0;
-  left: 0;
 }
 
 .social_list {
@@ -28,7 +24,7 @@
 }
 
 .copy_right {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .copy_right span {

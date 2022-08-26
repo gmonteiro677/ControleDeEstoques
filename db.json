@@ -87,22 +87,6 @@
       "cost": 0,
       "services": [],
       "id": 5
-    },
-    {
-      "name": "Calcário",
-      "budget": "30000",
-      "unity": {
-        "id": "1",
-        "name": "KG"
-      },
-      "quan": 80000,
-      "category": {
-        "id": "1",
-        "name": "Ração"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
     }
   ],
   "categories": [
@@ -140,5 +124,9 @@
       "id": 6,
       "name": "L"
     }
+  ],
+
+  "usuarios": [
+    
   ]
 }

@@ -49,7 +49,6 @@ const RoutesApp = () => {
     <BrowserRouter>
       {isAuth?.isAuth && <Navbar />}
       <Private />
-      <Footer />
     </BrowserRouter>
   )
 }

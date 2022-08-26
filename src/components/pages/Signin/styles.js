@@ -7,10 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  height: 80vh;
-  background-image: url(${fundo});
-  background-repeat: no-repeat;
-  background-size 100% 100%;
+  height: 100%;
 `
 
 export const Content = styled.div`
@@ -25,6 +22,8 @@ export const Content = styled.div`
   max-width: 500px;
   padding: 40px;
   border-radius: 5px;
+  margin-top: 8%;
+  border-radius: 10px;
 `
 export const Label = styled.label`
   font-size: 10px;
@@ -51,4 +50,7 @@ export const h1 = styled.h1`
   color: #01579b;
   text-shadow: 2em;
   padding-bottom: 0.5em;
+`
+export const Footer = styled.footer`
+  margin-top: 10%;
 `

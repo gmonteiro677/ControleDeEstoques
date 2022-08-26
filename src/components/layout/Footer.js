@@ -6,13 +6,19 @@ function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
         <li>
-          <FaFacebook />
+          <a href="https://www.facebook.com/" target="_blank">
+            <FaFacebook style={{ color: '#FFF' }} />
+          </a>
         </li>
         <li>
-          <FaInstagram />
+          <a href="https://www.instagram.com/" target="_blank">
+            <FaInstagram style={{ color: '#FFF' }} />
+          </a>
         </li>
         <li>
-          <FaLinkedin />
+          <a href="https://www.linkedin.com" target="_blank">
+            <FaLinkedin style={{ color: '#FFF' }} />
+          </a>
         </li>
       </ul>
       <p className={styles.copy_right}>
