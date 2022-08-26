@@ -1,9 +1,15 @@
 import { createContext, useEffect, useState } from 'react'
+import Api from '../service/api'
+import { useNavigate } from 'react-router-dom'
+import Signup from '../components/pages/Signup'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const AuthContext = createContext({})
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const userToken = localStorage.getItem('user_token')
@@ -37,26 +43,14 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  const signup = (email, password) => {
-    const usersStorage = JSON.parse(localStorage.getItem('users_db'))
+  const signup = async (email, password) => {
+    // const usersStorage = JSON.parse(localStorage.getItem('users_db'))
 
-    const hasUser = usersStorage?.filter(user => user.email === email)
+    const Cadastro = Api.post('usuarios', { email, password })
 
-    if (hasUser?.length) {
-      return 'Já tem uma conta com esse E-mail'
-    }
-
-    let newUser
-
-    if (usersStorage) {
-      newUser = [...usersStorage, { email, password }]
-    } else {
-      newUser = [{ email, password }]
-    }
-
-    localStorage.setItem('users_db', JSON.stringify(newUser))
-
-    return
+    toast.success('Usuário cadastrado')
+    navigate('/')
+    return Cadastro
   }
 
   const signout = () => {
@@ -69,6 +63,18 @@ export const AuthProvider = ({ children }) => {
       value={{ user, isAuth: !!user, signin, signup, signout }}
     >
       {children}
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        limit={1}
+      />
     </AuthContext.Provider>
   )
 }

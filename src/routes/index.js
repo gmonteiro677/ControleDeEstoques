@@ -35,7 +35,7 @@ const AuthRoutes = () => {
 const SignInRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Signin />} />
+      <Route exact path="/" element={<Signin />} />
       <Route exact path="/signup" element={<Signup />} />
       <Route path="*" element={<Signin />} />
     </Routes>
@@ -46,10 +46,10 @@ const RoutesApp = () => {
   const isAuth = useAuth()
 
   return (
-    <BrowserRouter>
+    <>
       {isAuth?.isAuth && <Navbar />}
       <Private />
-    </BrowserRouter>
+    </>
   )
 }
 
