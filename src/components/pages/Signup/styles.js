@@ -46,3 +46,8 @@ export const Strong = styled.strong`
     color: #676767;
   }
 `
+export const h1 = styled.h1`
+  color: #01579b;
+  text-shadow: 2em;
+  padding-bottom: 0.5em;
+`

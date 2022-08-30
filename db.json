@@ -126,6 +126,15 @@
     }
   ],
   "usuarios": [
-    
+    {
+      "email": "a",
+      "password": "a",
+      "id": 1
+    },
+    {
+      "email": "n",
+      "password": "n",
+      "id": 2
+    }
   ]
 }

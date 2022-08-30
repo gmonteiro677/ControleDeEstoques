@@ -41,8 +41,8 @@ const Signup = () => {
 
   return (
     <C.Container>
-      <C.Label>Sistema de login</C.Label>
       <C.Content>
+        <C.h1>Inscrever-se</C.h1>
         <Input
           type="email"
           placeholder="Digite seu E-mail"
